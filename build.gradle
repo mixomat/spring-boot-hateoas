@@ -1,0 +1,26 @@
+buildscript {
+	repositories {
+		maven { url "http://repo.spring.io/libs-snapshot" }
+		mavenLocal()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:0.5.0.M7")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+	mavenCentral()
+	maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-web:0.5.0.M7")
+	testCompile("junit:junit:4.11")
+}
