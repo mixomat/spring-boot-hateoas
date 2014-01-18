@@ -11,5 +11,5 @@ git clone https://github.com/marcopotento/spring-boot-hateoas.git
 java -jar build/libs/spring-boot-example-1.0.jar
 ```
 
-View the example in your browser: [http://localhost:8080](http://localhost:8080)
+Examine the REST API in your browser: [http://localhost:8080](http://localhost:8080)
 
